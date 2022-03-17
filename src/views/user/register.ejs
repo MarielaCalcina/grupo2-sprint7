@@ -9,7 +9,7 @@
         
             <section class="forms">
                 
-                <form action="/register" method="post" enctype="multipart/form-data">
+                <form action="/register" method="post" enctype="multipart/form-data" class="registerjs">
                     <!--
                     <div class="google">
                         <button type=""><i class="fab fa-google"></i> Registrate con Google</button>
@@ -51,6 +51,14 @@
                     </div>
         
                     <div class="submit"><label for="submit"><button type="submit" id="submit">Crear Cuenta</button></label></div>
+
+                    <!--revisar esto-->
+                    <div class="errores">
+                        <ul></ul>
+                    </div>
+
+
+
                 </form>
                 <div class="carrousel">
                     <!-- <i class="fas fa-arrow-left"></i> -->
@@ -66,5 +74,8 @@
         </main>
 
         <%- include("../partials/footer") %>
+
+        <script src="/js/scriptjs"></script>
+
     </body>
     </html>

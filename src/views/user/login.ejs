@@ -6,6 +6,7 @@
             <h1>Inciar sesión</h1>
         </section>
         <section class=forms>
+
             <div class="carrousel">
                 <!-- <i class="fas fa-arrow-left"></i> -->
                 <img src="/images/pagina/banner-l-r.jpg" alt="banner">
@@ -18,7 +19,9 @@
             <div class="facebook">
                 <button type="submit"><i class="fab fa-facebook"></i> Registrate con Facebook</button>
             </div>
+        
             <form action="/login" method="post">
+
                 <div class="email">
                     <label for="email">Email:<input type="email" name="email" value="<%= locals.oldData ? oldData.email : null %>" ></label>
                     <% if (locals.errors && errors.email) { %>
